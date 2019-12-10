@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/background_item_recycler_view"
+    android:orientation="vertical"
+    android:paddingLeft="25dp"
+    android:paddingTop="15dp"
+    android:paddingRight="25dp"
+    android:paddingBottom="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle_image_up_arrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/background_up_arrow"
+            android:src="@drawable/icarrow_up_black_24dp" />
+
+        <TextView
+            android:id="@+id/text_view_ride_starting_point_past_rides_recycler_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/circle_image_up_arrow"
+            android:text="Stare Maisto"
+            android:textColor="@color/textColorWhite"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="Total:"
+            android:textColor="@color/textColorRecycler"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="90">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:padding="6dp"
+                android:src="@drawable/background_white_dots" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:padding="6dp"
+                android:src="@drawable/background_white_dots" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:padding="6dp"
+                android:src="@drawable/background_white_dots" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relative_layout_destination_place"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/text_view_ride_starting_date_time_past_rides_recycler_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Nov 24,18:00"
+                android:textColor="@color/textColorRecycler"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_view_total_amount_in_dollars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="16"
+                android:textAlignment="center"
+                android:textColor="@color/textColorWhite"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/image_view_dollar_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_ride_starting_date_time_past_rides_recycler_data"
+                android:layout_toLeftOf="@+id/text_view_total_amount_in_dollars"
+                android:text="$"
+                android:textColor="@color/textColorWhite"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_destination_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle_image_down_arrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/background_down_arrow"
+            android:src="@drawable/ic_arrow_down_black_24dp" />
+
+        <TextView
+            android:id="@+id/text_view_ride_destination_point_past_rides_recycler_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/circle_image_down_arrow"
+            android:text="Meapark At"
+            android:textColor="@color/textColorWhite"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp">
+
+        <TextView
+            android:id="@+id/text_view_ride_destination_date_time_past_rides_recycler_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="6dp"
+            android:text="Nov 24,19:35"
+            android:textColor="@color/textColorRecycler"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="5sp"
+            android:layout_toLeftOf="@+id/text_view_travel_time_recycler_data"
+            android:text="Travel Time:"
+            android:textColor="@color/textColorRecycler"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_travel_time_recycler_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="6dp"
+            android:text="1h 35min"
+            android:textColor="@color/textColorRecycler"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</LinearLayout>

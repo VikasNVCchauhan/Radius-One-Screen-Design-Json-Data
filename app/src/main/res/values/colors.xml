@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#09092f</color>
+    <color name="colorAccent">#222144</color>
+    <color name="colorLightDarkBlue">#222144</color>
+    <color name="colorDarkBlue">#0a0930</color>
+    <color name="colorDownArrowBack">#D8FF7A4B</color>
+    <color name="colorUpArrowBack">#D56761FA</color>
+    <color name="seeMoreColor"> #723830</color>
+    <color name="textColorWhite">#FFFFFF</color>
+    <color name="textColorSilver">#C0C2EB</color>
+    <color name="textColorRecycler">#B79E9EC4</color>
+</resources>
